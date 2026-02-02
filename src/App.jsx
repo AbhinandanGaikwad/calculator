@@ -4,18 +4,18 @@ import Button from "./components/Button"
 import history_icon from "./assets/history-icon.svg"
 import trash_icon from "./assets/trash-icon.svg"
 import './App.css'
-import { useState, useEffect } from "react" //AI
+import { useState, useEffect } from "react" 
 function App() {
   const [displayValue,setValue] = useState('')
 
   const [history, setHistory] = useState(() =>{
     const saved = localStorage.getItem('calculationHistory')
     return saved ? JSON.parse(saved) : []
-  })//AI
+  })
 
   useEffect(() =>{
     localStorage.setItem('calculationHistory',JSON.stringify(history))
-  },[history])//AI
+  },[history])
 
   const [historyToggle, setHistoryState] = useState(false)
 
@@ -29,10 +29,10 @@ function App() {
 
   const clearHistory = () => {
     setHistory([]);
-  }//AI
+  }
 
   const calculate = () => {
-    if(!displayValue) return //AI
+    if(!displayValue) return 
     try {
       const result = Function(`"use strict"; return (${displayValue})`)();
       const calculationHistory = `${displayValue} = ${result}`
