@@ -1,0 +1,191 @@
+/*Main Wrapper Style*/
+
+.main-wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+}
+
+/*Calculator Title and Description Style*/
+
+.calci-info{
+    height: 480px;
+    width: 360px;
+    background-color: hsl(182, 89%, 26%);
+    justify-items: center;
+    align-content:center;
+    
+}
+
+h1{
+    color: hsl(198, 76%, 10%);
+    font-size: 64px;
+    text-align: left;
+}
+
+h2{
+    color:hsl(42, 57%, 91%);
+    font-size: 24px;
+    text-align: right;
+}
+
+/*Calculator Div Style*/
+
+.calculator{
+    height: 480px;
+    width: 360px;
+    background-color: hsl(42, 57%, 91%);
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+/*Display Style*/
+
+#display{
+    max-width: 93%;
+    min-height: 80px;
+    max-height: 80px;
+    border:none;
+    outline: none;
+    font-size: 32px;
+    padding-left: 24px;
+    color:hsl(198, 76%, 10%);
+    background-color: hsl(42, 55%, 91%);
+    user-select: none;
+    
+}
+
+/*Calculator Key Style*/
+
+.keys{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+/*Normal Button Style*/
+
+.normal-buttons{
+    height: 80px;
+    width:90px;
+    border: none;
+    outline:none;
+    font-size : 20px;
+    color: hsl(42, 55%, 91%);
+    background-color: hsl(198, 76%, 10%);
+    cursor: pointer;
+}
+
+.normal-buttons:hover{
+    background-color: hsl(198, 76%, 16%);
+}
+
+.normal-buttons:active{
+    background-color: hsl(198, 76%, 22%);
+}
+
+/*Special Button Style*/
+
+.special-buttons{
+    height: 80px;
+    width:90px;
+    border: none;
+    outline:none;
+    font-size : 22px;
+    color: hsl(169, 64%, 68%);
+    background-color: hsl(198, 76%, 10%);
+    cursor: pointer;
+}
+
+.special-buttons:hover{
+    background-color: hsl(198, 76%, 16%);
+}
+
+.special-buttons:active{
+    background-color: hsl(198, 76%, 22%);
+}
+
+/*Equals Button Style*/
+
+.equals-button{
+    height: 80px;
+    width:90px;
+    border: none;
+    outline:none;
+    font-size : 22px;
+    color: hsl(169, 64%, 68%);
+    background-color: hsl(198, 76%, 10%);
+    cursor: pointer;
+}
+
+.equals-button:hover{
+    background-color: hsl(198, 76%, 16%);
+}
+
+.equals-button:active{
+    background-color: hsl(198, 76%, 22%);
+} 
+
+/*History Heading and Icon Style*/
+
+h3{
+    color: hsl(42, 57%, 91%);
+    font-size: 32px;
+    font-weight: 500;
+    align-content: center;
+    padding-left: 24px;
+    height: 80px;
+    width: 100%;
+}
+
+h3 img{
+    margin-left: 200px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+h3 img:hover{
+    background-color: hsl(198, 76%, 16%);
+}
+
+h3 img:active{
+    background-color: hsl(198, 76%, 22%);
+}
+
+/*History Functionality Style*/
+
+.history-toggled-off{
+    max-height: 0px;
+    min-height: 0px;
+    width: 360px;
+    background-color: hsl(198, 76%, 10%);
+    opacity: 0;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: max-height 0.8s ease,min-height 0.8s ease,opacity 0.6s ease;
+}
+
+.history-toggled-on{
+    min-height: 480px;
+    max-height: 480px;
+    width: 360px;
+    background-color: hsl(198, 76%, 10%);
+    opacity: 1;
+    overflow: hidden;
+}
+
+/*Operation History List Style*/
+
+ul{
+    max-width: 100%;
+}
+
+ul li{
+    list-style: none;
+    font-size: 24px;
+    font-weight:lighter;
+    margin: 0px 24px 4px 24px;
+    color: hsl(42, 57%, 91%);
+    user-select: none;
+    cursor: pointer;
+}
